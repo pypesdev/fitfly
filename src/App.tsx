@@ -30,14 +30,14 @@ function App() {
 
             {/* Desktop CTA */}
             <div className="hidden md:flex items-center space-x-4">
-              <button className="text-gray-600 hover:text-gray-900 transition-colors">Sign In</button>
-              <button className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                Start Free Trial
-              </button>
+              <a href="https://app.fitfly.tech" className="text-gray-600 hover:text-gray-900 transition-colors">Sign In</a>
+              <a href="https://app.fitfly.tech" className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                Start Fitness Revolution
+              </a>
             </div>
 
             {/* Mobile menu button */}
-            <button 
+            <button
               onClick={toggleMenu}
               className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
               aria-label="Toggle menu"
@@ -55,10 +55,10 @@ function App() {
                 <a href="#testimonials" className="block text-gray-600 hover:text-gray-900 transition-colors">Success Stories</a>
                 <a href="#pricing" className="block text-gray-600 hover:text-gray-900 transition-colors">Pricing</a>
                 <div className="pt-4 border-t border-gray-100">
-                  <button className="block w-full text-left text-gray-600 hover:text-gray-900 transition-colors mb-3">Sign In</button>
-                  <button className="block w-full bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300">
-                    Start Free Trial
-                  </button>
+                  <a href="https://app.fitfly.tech" className="block w-full text-left text-gray-600 hover:text-gray-900 transition-colors mb-3">Sign In</a>
+                  <a href="https://app.fitfly.tech" className="block w-full bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300">
+                    Start Fitness Revolution
+                  </a>
                 </div>
               </nav>
             </div>
@@ -76,7 +76,7 @@ function App() {
                   <Zap className="w-4 h-4 mr-2" />
                   AI-Powered Fitness Revolution
                 </div>
-                
+
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                   Personalized coaching.{' '}
                   <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
@@ -84,23 +84,24 @@ function App() {
                   </span>{' '}
                   Lasting Support
                 </h1>
-                
+
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                   Transform your fitness journey with AI that adapts to you. Get personalized workout and nutrition plans, intelligent progress tracking, and real-time coaching support—all in one platform.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <button className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center group">
-                    Start Your Free Trial
+                  <a href="https://app.fitfly.tech" className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center group">
+                    Start Fitness Revolution
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </button>
-                  
-                  <button className="flex items-center justify-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors group">
+                  </a>
+
+                  {/* <button className="flex items-center justify-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors group">
                     <div className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Play className="w-5 h-5 ml-1" />
                     </div>
                     <span className="font-medium">Watch Demo</span>
-                  </button>
+                  </button> */}
+                  {/* TODO: ADD DEMO VIDEO */}
                 </div>
 
                 <div className="mt-12 flex items-center justify-center lg:justify-start space-x-8 text-sm text-gray-500">
@@ -109,21 +110,21 @@ function App() {
                     <span>No credit card required</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span>14-day free trial</span>
+                    {/* <Check className="w-4 h-4 text-green-500" /> */}
+                    {/* <span>14-day free trial</span> */}
                   </div>
                 </div>
               </div>
 
               <div className="relative">
                 <div className="relative z-10">
-                  <img 
-                    src="https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                  <img
+                    src="https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=800"
                     alt="Person using fitness app while working out"
                     className="rounded-2xl shadow-2xl w-full"
                   />
                 </div>
-                
+
                 {/* Floating Cards */}
                 <div className="absolute -top-6 -left-6 bg-white rounded-xl shadow-lg p-4 z-20 hidden sm:block">
                   <div className="flex items-center space-x-3">
@@ -291,7 +292,7 @@ function App() {
         </section>
 
         {/* Social Proof */}
-        <section className="py-20 bg-white">
+        <section id="testimonials" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -316,7 +317,7 @@ function App() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-gray-50 rounded-2xl p-8">
                 <div className="flex items-center mb-4">
-                  {[1,2,3,4,5].map((star) => (
+                  {[1, 2, 3, 4, 5].map((star) => (
                     <Star key={star} className="w-5 h-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
@@ -324,8 +325,8 @@ function App() {
                   "FitFly's AI coaching is incredible. It adapts to my schedule and keeps me motivated even on busy days. I've lost 25 pounds in 3 months!"
                 </p>
                 <div className="flex items-center">
-                  <img 
-                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150" 
+                  <img
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150"
                     alt="Sarah M."
                     className="w-12 h-12 rounded-full object-cover mr-4"
                   />
@@ -338,7 +339,7 @@ function App() {
 
               <div className="bg-gray-50 rounded-2xl p-8">
                 <div className="flex items-center mb-4">
-                  {[1,2,3,4,5].map((star) => (
+                  {[1, 2, 3, 4, 5].map((star) => (
                     <Star key={star} className="w-5 h-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
@@ -346,8 +347,8 @@ function App() {
                   "The personalized nutrition plans are game-changing. I finally understand what my body needs, and the results speak for themselves."
                 </p>
                 <div className="flex items-center">
-                  <img 
-                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150" 
+                  <img
+                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150"
                     alt="Mike R."
                     className="w-12 h-12 rounded-full object-cover mr-4"
                   />
@@ -360,7 +361,7 @@ function App() {
 
               <div className="bg-gray-50 rounded-2xl p-8">
                 <div className="flex items-center mb-4">
-                  {[1,2,3,4,5].map((star) => (
+                  {[1, 2, 3, 4, 5].map((star) => (
                     <Star key={star} className="w-5 h-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
@@ -368,8 +369,8 @@ function App() {
                   "As a busy mom, I love how FitFly fits into my life. The workouts are efficient, and the support keeps me accountable."
                 </p>
                 <div className="flex items-center">
-                  <img 
-                    src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150" 
+                  <img
+                    src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150"
                     alt="Jessica L."
                     className="w-12 h-12 rounded-full object-cover mr-4"
                   />
@@ -392,14 +393,14 @@ function App() {
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
               Join thousands who have already discovered the power of AI-personalized fitness coaching. Start your free trial today—no credit card required.
             </p>
-            
+
             <div className="bg-white rounded-2xl p-8 max-w-md mx-auto mb-8">
               <div className="mb-6">
-                <div className="text-4xl font-bold text-gray-900">$29</div>
+                <div className="text-4xl font-bold text-gray-900">$10</div>
                 <div className="text-gray-600">per month</div>
                 <div className="text-sm text-green-600 font-medium">14-day free trial</div>
               </div>
-              
+
               <ul className="text-left space-y-3 mb-8">
                 <li className="flex items-center">
                   <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
@@ -423,9 +424,9 @@ function App() {
                 </li>
               </ul>
 
-              <button className="w-full bg-gradient-to-r from-blue-500 to-green-500 text-white py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                Start Your Free Trial
-              </button>
+              <a href="https://app.fitfly.tech" className="w-full bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-6 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                Start
+              </a>
             </div>
 
             <p className="text-blue-100 text-sm">
@@ -434,58 +435,6 @@ function App() {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="bg-gray-900 text-white py-12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-4 gap-8">
-              <div>
-                <div className="flex items-center space-x-2 mb-4">
-                  <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg flex items-center justify-center">
-                    <Zap className="w-5 h-5 text-white" />
-                  </div>
-                  <span className="text-xl font-bold">FitFly</span>
-                </div>
-                <p className="text-gray-400 mb-4">
-                  AI-powered fitness coaching that adapts to you. Transform your health with personalized plans and unwavering support.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="font-semibold mb-4">Product</h4>
-                <ul className="space-y-2 text-gray-400">
-                  <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">API</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Integrations</a></li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="font-semibold mb-4">Support</h4>
-                <ul className="space-y-2 text-gray-400">
-                  <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="font-semibold mb-4">Company</h4>
-                <ul className="space-y-2 text-gray-400">
-                  <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Press</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
-              <p>&copy; 2025 FitFly. All rights reserved.</p>
-            </div>
-          </div>
-        </footer>
       </main>
     </div>
   );
